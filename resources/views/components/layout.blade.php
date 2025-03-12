@@ -9,11 +9,21 @@
 <h1 class="text-3xl font-bold text-center mt-4 text-red-600 md:text-5xl">
     BingeBoard
 </h1>
+<!-- Navigation Links -->
+<div class="flex justify-center space-x-4 mt-4">
+    <a href="{{ route('home') }}" class="text-blue-500 font-bold hover:underline">Home</a>
+    <a href="{{ route('watched') }}" class="text-blue-500 font-bold hover:underline">Watched</a>
+</div>
 
-<div class="flex justify-center text-center m-4">
-    <p class="text-center mt-4">
+<div class=" justify-center text-center font-bold md:text-2xl m-4">
+    <p class="">
         {{$slot}}
     </p>
+    <p>
+        {{$search}}
+    </p>
 </div>
+
+
 </body>
 </html>
