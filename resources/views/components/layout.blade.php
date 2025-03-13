@@ -13,15 +13,20 @@
 
 <div class=" justify-center text-center font-bold md:text-2xl m-4">
     <p class="">
-        {{$slot}}
+        {{$header}}
     </p>
 
 </div>
 
 <!-- Navigation Links -->
 <div class="flex justify-center space-x-4 mt-4">
-    <a href="{{ route('home') }}" class="text-blue-500 font-bold hover:underline">Home</a>
-    <a href="{{ route('watched') }}" class="text-blue-500 font-bold hover:underline">Watched</a>
+    <a href="/" class="text-blue-500 font-bold hover:underline">Home</a>
+    <a href="/watched" class="text-blue-500 font-bold hover:underline">Watched</a>
+    <a href="/watching" class="text-blue-500 font-bold hover:underline">Watching</a>
+</div>
+
+<div>
+    {{$slot}}
 </div>
 </body>
 </html>
